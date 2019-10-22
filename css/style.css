@@ -1,0 +1,17 @@
+body {
+  background-color: lavenderblush;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: mediumpurple;
+}
+
+hr {
+  border-width: 1px 0 0 0;
+  border-color: mediumslateblue;
+  border-style: solid;
+}
