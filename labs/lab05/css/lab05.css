@@ -1,0 +1,144 @@
+body {
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+section {
+  /* a little breathing room between sections */
+  margin: 100px 0px;
+}
+
+/* count-down bar */
+.bar {
+  width: 750px;
+  height: 4rem;
+  background-color: #deb887;
+  line-height: 4rem;
+  padding-left: 2rem;
+  transition: width 5s steps(5, start);
+}
+
+.bar2 {
+  width: 750px;
+  height: 4rem;
+  background-color: lightseagreen;
+  line-height: 4rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  animation: countdown 10s steps(5, end) forwards;
+}
+
+.bar2::before {
+    animation: countdown 10s steps(5, end) 1s forwards;
+    content: '5 seconds';
+}
+
+/* the "scene" for our rolling ball animation */
+#anim-container {
+  width: 1000px;
+  height: 400px;
+  /* generate a "hill" using CSS linear-gradient */
+  background-image: linear-gradient(10deg, #013a6b 50%, #87ceeb 50%);
+  overflow: hidden;
+}
+
+/* size and position the beachball before animation */
+.ball {
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 50px;
+  left: -50px;
+  animation:
+    downhill 4s 1s ease-in forwards,
+    bounce 3s ease-in infinite alternate;
+}
+
+video::cue {
+  color: white;
+  background-color: black;
+  opacity: .8;
+  text-shadow: darkslategray;
+}
+
+@keyframes countdown {
+  0% {
+      width: 750px;
+  }
+
+  20% {
+      content: '4 seconds';
+  }
+
+  40% {
+      content: '3 seconds';
+  }
+
+  60% {
+      content: '2 seconds';
+  }
+
+  80% {
+      content: '1 second';
+  }
+
+  100% {
+      content: '0 seconds';
+      width: 400px;
+  }
+}
+
+/* @keyframes downhill {
+  0% {
+    top: 50px;
+    left: 10px;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    top: 50px;
+    left: 250px;
+  }
+
+  50% {
+    top: 150px;
+    left: 500px;
+  }
+
+  75% {
+    top: 100px;
+    left: 750px;
+  }
+
+  100% {
+    top: 226.33px;
+    left: 1010px;
+    transform: rotate(720deg);
+  }
+} */
+
+@keyframes downhill {
+  0% {
+    top: 50px;
+    left: -50px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 226px;
+    left: 1010px;
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    padding-top: 0px;
+  }
+
+  40% {
+    padding-top: 50px;
+  }
+}

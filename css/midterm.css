@@ -156,7 +156,7 @@ p {
 .labs-title {
   text-align: center;
   font-size: 5rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   letter-spacing: -.5px;
 }
 
@@ -165,7 +165,16 @@ p {
   max-width: 43rem;
   line-height: 2rem;
   letter-spacing: .8px;
-  margin: 0 auto 7rem;
+  margin: 0 auto 1rem;
+  padding: 0 4rem;
+}
+
+.fpp {
+  font-size: 1.4rem;
+  max-width: 43rem;
+  line-height: 2rem;
+  letter-spacing: .8px;
+  margin: 0 auto 2rem;
   padding: 0 4rem;
 }
 
@@ -199,6 +208,82 @@ p {
   font-weight: 500;
 }
 
+.fpp-body {
+  background-image: linear-gradient(rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.8)), url("../images/fpp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  height: 60vh;
+  margin-bottom: 4rem;
+}
+
+.fpp-title {
+  font-size: 5rem;
+  margin: 2rem 3rem 1rem;
+  letter-spacing: -.5px;
+}
+
+.fpp-topic {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: .8px;
+  margin: 2rem 3rem 0;
+  padding-bottom: .2rem;
+  width: max-content;
+  color: white;
+  border: 1px solid white;
+  border-width: 0 0 2px 0;
+  -webkit-text-stroke: 1px white;
+}
+
+.fpp-description {
+  font-size: 1.4rem;
+  max-width: 60%;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.fpp-subtopic {
+  font-weight: 400;
+  display: inline;
+  margin-right: .5rem;
+}
+
+.fpp-content {
+  display: inline;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.fpp-subgroup {
+  margin: 1rem 3rem;
+  max-width: 57%;
+}
+
+.fpp-subgroup-last {
+  padding-bottom: 2rem;
+}
+
+.fpp-link {
+  color: #c4c4c4;
+  -webkit-text-stroke: .5px #c4c4c4;
+  transition: 300ms;
+  text-decoration: underline;
+}
+
+.fpp-link:hover {
+  color: white;
+  -webkit-text-stroke: .5px white;
+  font-style: italic;
+}
+
+.fpp-image {
+  width: 100%;
+  margin-top: .7rem;
+  filter: grayscale(100%);
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -217,6 +302,10 @@ p {
   }
 
   .labs-description {
+    font-size: 1.2rem;
+  }
+
+  .final-project-proposal {
     font-size: 1.2rem;
   }
 
@@ -258,7 +347,12 @@ p {
 
   .labs-description {
     font-size: 1.2rem;
-    margin: .5rem auto 4rem;
+    margin: .5rem auto 1rem;
+  }
+
+  .final-project-proposal {
+    font-size: 1.2rem;
+    margin: .5 auto 3rem;
   }
 }
 
