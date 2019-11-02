@@ -189,18 +189,19 @@ p {
 .lab {
   color: black;
   background-color: #ededed;
-  opacity: .75;
+  opacity: .9;
   border-radius: 1rem;
   height: 11rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 400ms;
+  transition: 300ms;
 }
 
 .lab:hover {
   transform: scale(1.05);
-  opacity: .9;
+  background-color: white;
+  opacity: 1;
 }
 
 .lab-number {

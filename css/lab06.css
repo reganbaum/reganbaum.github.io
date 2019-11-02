@@ -1,0 +1,29 @@
+.lab06-body {
+  background-image: linear-gradient(rgba(15, 15, 15, 0.8), rgba(0, 0, 0, 0.8)), url("../images/lab06.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  height: 60vh;
+  margin-bottom: 4rem;
+}
+
+.lab06-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  letter-spacing: -.5px;
+}
+
+.lab06-description {
+  font-size: 1.4rem;
+  max-width: 60rem;
+  line-height: 2rem;
+  letter-spacing: .8px;
+  margin: 1.5rem auto;
+  padding: 0 4rem;
+  text-align: justify;
+}

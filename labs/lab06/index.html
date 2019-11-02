@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Accessibility Testing</title>
+    <link href="../../css/midterm.css" rel="stylesheet" />
+    <link href="../../css/lab06.css" rel="stylesheet" />
+  </head>
+
+  <body class="lab06-body">
+    <div class="links">
+      <a class="link" href="../../index.html">Home</a>
+      <a class="link" href="../../about-me.html">About</a>
+      <a class="link active" href="../index.html">Labs</a>
+    </div>
+    <h1 class="lab06-title">Accessibility Testing</h1>
+    <h3 class="lab06-description">
+      For this lab, I used several web accessibility evaluation tools to see how
+      accessible my midterm website was. In testing my website, I found two main
+      problems with my site.
+    </h3>
+    <h3 class="lab06-description">
+      First, the header nesting patterns in my website do not follow the web
+      accessibility guidelines. Only &lth1&gt and &lth2&gt header tags should
+      follow an &lth1&gt tag, but I only use &lth1&gt and &lth3&gt tags
+      throughout my site; I skipped over the &lth2&gt tag. To fix this, I would
+      change all the &lth3&gt tags to &lth2&gt tags so that the header levels
+      follow the accessibility guidelines.
+    </h3>
+    <h3 class="lab06-description">
+      Second, my midterm website does not have any page regions or ARIA
+      landmarks. Web pages should have regions defined, especially for the main
+      content, but I mostly only used &ltdiv&gt tags. To fix this, I would make
+      the HTML tags on my pages more specific. For example, I would add a
+      &ltmav&gt tag to my navigation links. I would also add &ltmain&gt tags to
+      the main content area of each page.
+    </h3>
+    <h3 class="lab06-description">
+      As I build the website for my final project, I will keep these ideas in
+      mind and focus more on building an accessible website. I will also
+      regularly check it to ensure that the website follows the accessibility
+      guidelines.
+    </h3>
+  </body>
+</html>
