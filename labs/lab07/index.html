@@ -20,61 +20,106 @@
 
         <div>
           <label>Animal (plural): </label>
-          <input type="text" name="animal1" onblur="check(this)" />
+          <input
+            type="text"
+            name="animal1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Name: </label>
-          <input type="text" name="name1" onblur="check(this)" />
+          <input
+            type="text"
+            name="name1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Name: </label>
-          <input type="text" name="name2" onblur="check(this)" />
+          <input
+            type="text"
+            name="name2"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Verb (ending in -ing): </label>
-          <input type="text" name="verb1" onblur="check(this)" />
+          <input
+            type="text"
+            name="verb1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Adjective: </label>
-          <input type="text" name="adjective1" onblur="check(this)" />
+          <input
+            type="text"
+            name="adjective1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Noun: </label>
-          <input type="text" name="noun1" onblur="check(this)" />
+          <input
+            type="text"
+            name="noun1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Verb (past tense): </label>
-          <input type="text" name="verb2" onblur="check(this)" />
+          <input
+            type="text"
+            name="verb2"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Noun: </label>
-          <input type="text" name="noun2" onblur="check(this)" />
+          <input
+            type="text"
+            name="noun2"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div>
           <label>Adverb: </label>
-          <input type="text" name="adverb1" onblur="check(this)" />
+          <input
+            type="text"
+            name="adverb1"
+            onfocus="clearColor(this)"
+            onblur="check(this)"
+          />
         </div>
         <br />
 
         <div class="buttons">
-          <button class='btn' id="submit">Submit</button>
-          <button class='btn' id="reset">Reset</button>
+          <button class="btn" id="submit">Submit</button>
+          <button class="btn" id="reset">Reset</button>
         </div>
       </fieldset>
     </form>
@@ -134,16 +179,23 @@
 
       function check(inputElem) {
         if (inputElem.value == "") {
-          inputElem.style.background = '#ffa1a1';
-          inputElem.style.borderColor = '#ffa1a1';
+          inputElem.style.background = "#ffa1a1";
+          inputElem.style.borderColor = "#ffa1a1";
         } else {
-          inputElem.style.background = 'white';
-          inputElem.style.borderColor = 'white';
+          inputElem.style.background = "white";
+          inputElem.style.borderColor = "white";
         }
 
-        if (inputElem.name == 'name1' || inputElem.name == 'name2') {
-          inputElem.value = inputElem.value.charAt(0).toUpperCase() + inputElem.value.substring(1);
+        if (inputElem.name == "name1" || inputElem.name == "name2") {
+          inputElem.value =
+            inputElem.value.charAt(0).toUpperCase() +
+            inputElem.value.substring(1);
         }
+      }
+
+      function clearColor(inputElem) {
+        inputElem.style.background = "white";
+        inputElem.style.borderColor = "white";
       }
 
       let submitBtn = document.getElementById("submit");
