@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .lab07-body {
   background-image: linear-gradient(rgba(15, 15, 15, 0.8), rgba(0, 0, 0, 0.8)), url("../images/lab07.jpg");
   background-size: cover;
@@ -78,4 +79,86 @@ button {
   padding: 2rem 20% 3rem;
   text-align: justify;
   line-height: 2rem;
+=======
+.lab07-body {
+  background-image: linear-gradient(rgba(15, 15, 15, 0.8), rgba(0, 0, 0, 0.8)), url("../images/lab07.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+  letter-spacing: .05rem;
+}
+
+form {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  border: 0px solid white;
+}
+
+fieldset {
+  width: 25rem;
+  padding-top: 1.5rem;
+  border: 2px solid white;
+}
+
+legend {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+input {
+  -webkit-text-stroke: .5px black;
+}
+
+
+button {
+  -webkit-text-stroke: .5px black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background: none;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  padding: .5rem .8rem;
+  border: 2px solid white;
+  border-radius: 7px;
+  align-content: center;
+  margin-bottom: .5rem;
+  transition:
+    background 200ms,
+    color 200ms;
+  -webkit-text-stroke: .5px white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  -webkit-text-stroke: .5px black;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 20% 3rem;
+  text-align: justify;
+  line-height: 2rem;
+>>>>>>> 6efd46ec76bfd1809a84f02ea6ac454f6b9f0ad9
 }
