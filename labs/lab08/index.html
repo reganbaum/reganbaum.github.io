@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../css/midterm.css" rel="stylesheet" />
+    <link href="../../css/lab08.css" rel="stylesheet" />
+    <title>JS Libraries</title>
+  </head>
+
+  <body class="lab08-body">
+    <div class="links">
+      <a class="link" href="../../index.html">Home</a>
+      <a class="link" href="../../about-me.html">About</a>
+      <a class="link active" href="../index.html">Labs</a>
+    </div>
+    <h1 class="lab08-title">Duke</h1>
+    <div class="lab08-description" id="typed-strings">
+      <p>Blue Devils</p>
+      <p>Academics</p>
+      <p>Basketball</p>
+      <p>West Union</p>
+      <p>Vondy</p>
+      <p>Computer Science</p>
+      <p>Chapel</p>
+      <p>Forever</p>
+    </div>
+    <div class="typed-container">
+      <span id="typed"></span>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha256-+izcH23qgte+aiGZRxk63BxGUyoQrAQZVoH2zKU9usM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let options = {
+        stringsElement: document.getElementById("typed-strings"),
+        typeSpeed: 50,
+        startDelay: 1000,
+        backSpeed: 60,
+        backDelay: 1000,
+        loop: true,
+        smartBackspace: true,
+        shuffle: true,
+      };
+
+      let typed = new Typed("#typed", options);
+    </script>
+  </body>
+</html>
